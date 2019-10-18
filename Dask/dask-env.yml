@@ -1,0 +1,8 @@
+name: dask
+channels:
+  - defaults
+dependencies:
+  - dask >=2
+  - distributed >=2
+  - ipykernel
+  - pyarrow

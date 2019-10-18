@@ -1,0 +1,19 @@
+name: rapidsai-nightly2
+channels:
+  - rapidsai-nightly
+  - rapidsai
+  - nvidia
+  - numba
+  - conda-forge
+  - defaults
+dependencies:
+  - cudf=0.9
+  - cuml=0.9
+  - cugraph=0.9
+  - python=3.7
+  - cudatoolkit=10.0
+  - dask-cuda>=0.10
+  - pip
+  - ipykernel
+  - dask-cudf>=0.10
+  - python-graphviz
