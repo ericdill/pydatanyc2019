@@ -1,8 +1,18 @@
 name: dask
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - dask >=2
-  - distributed >=2
+  - dask=2.4.0
+  - distributed=2.4.0
+  - dask-gateway=0.5.0
   - ipykernel
   - pyarrow
+  - fastparquet
+  - gcsfs=0.3.0
+  - holoviews
+  - hvplot
+  - panel
+  - datashader
+  - python-snappy
+  - s3fs

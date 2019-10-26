@@ -1,4 +1,4 @@
-name: rapidsai-nightly2
+name: rapids-nightly
 channels:
   - rapidsai-nightly
   - rapidsai
@@ -7,9 +7,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - cudf=0.9
-  - cuml=0.9
-  - cugraph=0.9
+  - cudf
+  - cuml
+  - cugraph
   - python=3.7
   - cudatoolkit=10.0
   - dask-cuda>=0.10
@@ -17,3 +17,9 @@ dependencies:
   - ipykernel
   - dask-cudf>=0.10
   - python-graphviz
+  - kernda
+  - python-snappy
+  - pandas
+  - fastparquet
+  - cupy
+  - s3fs

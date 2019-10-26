@@ -1,0 +1,12 @@
+name: sparkmagic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - sparkmagic
+  - notebook
+  - ipykernel
+  - python-hdfs
+  - pyhive
+  - thrift=0.10.0 
+  - thrift_sasl=0.3.0

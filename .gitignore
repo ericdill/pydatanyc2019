@@ -108,3 +108,5 @@ venv.bak/
 **/dask-worker-space*
 
 **/Untitled*.ipynb
+
+**/dask-worker-space/

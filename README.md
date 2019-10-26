@@ -37,10 +37,16 @@ That means that some of the work that I have in this repository will not be repr
 
 ```
 # Make the directories on hdfs where we will put our files
-$ find anaconda-parsed-logs/ -type d | awk '{ print length(), $0 | "sort -n" }' | cut -d " " -f2 | xargs -I{} hdfs dfs -mkdir hdfs:///user/edill/{}
+find anaconda-parsed-logs/ -type d | awk '{ print length(), $0 | "sort -n" }' | cut -d " " -f2 | xargs -I{} hdfs dfs -mkdir hdfs:///user/edill/{}
 
 # Upload the parquet files individually
-$ find anaconda-parsed-logs/ -name "*.parquet" | xargs -L1 -I{} hdfs dfs -put {} hdfs:///user/edill/{}
+find anaconda-parsed-logs/ -name "*.parquet" | xargs -L1 -I{} hdfs dfs -put {} hdfs:///user/edill/{}
 ```
 
 ### AWS GPU ec2 instance
+
+
+## Resources
+https://anaconda.org/training/spark-ml/notebook
+
+https://anaconda.org/training/project/DaskML
